@@ -1,0 +1,199 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+	<div class="container">
+<div class="landing" style="text-align: center; float: right;">
+    <div class="row">`
+        <div class="row main-row">
+            <div class="col-6">
+               <p>Gideon Ole Sigilai</p>           
+            </div>
+            <br><br><br><br>
+            <div class="col-6">
+                <img src="{% static 'img/giidi.png' %}" alt="" style="border-radius: 50%;height: 100px; align-items: center; width: 89px;">
+            </div>
+        </div>
+    </div>
+</div>  
+<br><br>
+<br>         
+<div class="aboutMe">
+    <div class="row">
+        <!-- <div class="col-4">
+            <img src="images/girl-1906187_1920.jpg"  class="img-fluid">
+        </div> -->
+        <div class="col-8" id="desc">                                         
+            <h2>About me</h2>
+            <p> I am Gideon Ole Sigilai 23 years Old.I am a Computer Software developer and a student at Moringa School, a course I did out of passion,for compuer and technology.
+                Initially I had enrolled to a degree course on Communication and Media but later made up my mind and joined  this Code Camp</p>
+            <p>Moringa has thought me a lot of skills including, Teamwork,Leadership and Problem Solving.</p>
+        </div>
+    </div>
+</div>
+<div id="projects">
+    <h2>Projects</h2>
+    <p>During the course was able to do a couple of projects.Some were in groups while others were independent projects.</p>
+    <div class="row" id="projectss">
+        <div class="col-6" style="width: 28rem;">
+            <img class="card-img-top" src="/static/img/gallery.png" alt="Card image cap"  class="img-fluid">
+            <h3>My Gallery App</h3>
+            <p>My Gallery is all about creating a platform for customers and business person who want to sell their produce.The customers can order from our app and get their orders delivered to there door steps making work for them easier</p>     
+                <a href="https://giidigallery.herokuapp.com/"><button class=" btn btn-primary" >View Site</button></a>
+          </div>
+          <div class="col-6" style="width: 28rem;" id="links">
+            <img class="card-img-top" src="/static/img/pizza.png" alt="Card image cap"  class="img-fluid">
+            <h3>PizzaIn</h3>
+            <p>Pizza online sales is a project that I did using Javascript.It automatically calculates the price of the customers order based on the particulars placed</p>
+            <a href="https://olesigilai.github.io/pizza/"><button class=" btn btn-primary" >View Site</button></a>
+          </div>     
+    </div> 
+</div>
+<div class="Skills">
+    <div>
+        <h2>Skills</h2>
+        <p> My experience in Moringa has been awesome.In the last Six months, I have been able to gain lots of skills through research and in class.Some of them include:</p>
+    </div>
+    <div class="skill">
+        <div class="row" id="skills">
+            <div class="col-3">
+                <ul>
+                    <li>
+                        Front-End using <strong>HTML,CSS,Bootstrap and Angular</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <ul>
+                    <li>
+                        Backend-End using <strong>Django and PHP</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <ul>
+                    <li>
+                        Databases using <strong>MySQL</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li>
+                        Collaboration tools using <strong>Github</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>      
+    </div>
+</div>
+    <div class="hobbies">
+        <div class="hobbyDesc"> 
+            <h2>Hobbies</h2>
+            <p>Sometimes I get off my computer and get to do what I love when free.This has enabled me to try figure out the activities throughout the day and set my mind free.</p>
+        </div>
+        <div class="row" id="hobbyLinks">
+            <div class="col-6">
+                <ul>
+                    <li>
+                       Listening to Music and Playing Pool-Tables.</strong>
+                    </li>
+                </ul>            
+            </div>
+
+            <div class="col-6">
+                <ul>
+                    <li>
+                        Travel to new Places</strong>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>Contact links</h2>
+        <p>Wanna like to get in touch with me? Of course yes. Lets connect through.. </p>
+        <div class="row">
+            <div class="col-4" id="contact" >
+                <ul style="text-decoration: none;">
+                    <li >
+                        <a href="https://www.linkedin.com/in/gideon-kipkirui/"><button class=" btn btn-primary" >LInkedIn</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>
+                        <a href="https://github.com/olesigilai"><button class=" btn btn-primary" >Github</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/ole_sigilai"><button class=" btn btn-primary" > <i class="bi bi-twitter"></i>Twitter</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="container text-muted text-center py-3 mt-5">
+                <h5>Copyright &copy; 2020 | Gideon Ole Sigilai</h5>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>
+
+
