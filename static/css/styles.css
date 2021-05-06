@@ -55,12 +55,12 @@ p {
 #projects{
     padding-left: 5%;
 }
-.Skills h2{
+.skills h2{
     color: indigo;
     font-weight: 700;
     text-align: center;
 }
-.Skills p{
+.skills p{
     padding-left:5%;
 }
 #skills ul{

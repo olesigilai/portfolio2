@@ -1,5 +1,6 @@
 
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#desc">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,7 +36,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href=>About Me</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
@@ -97,46 +98,55 @@
           </div>     
     </div> 
 </div>
-<div class="Skills">
+
+<div class="skills" style="display: inline-flex;">
+<div class="card-group">
+    <div class="card">
+        <img src="/static/img/skills.png" class="card-img-top" alt="..." style="height: 20%;width: 20%;">
+    <div class="card-body">
+        <h5 class="card-title">Skills</h5>
+        <p class="card-text">Front-End using <strong>HTML,CSS,Bootstrap and Angular</strong></p>
+      <p>Backend-End using <strong>Django and PHP</strong></p>
+      <p>Databases using <strong>MySQL</strong></p>      
+
+    </div>
+    </div>
+    </div>
+    <div class="card">
+      <img src="/static/img/skills.png" class="card-img-top" alt="..." style="height: 20%;width: 20%;">
+      <div class="card-body">
+        <h2 class="card-title">Hobbies</h2>
+        <p class="card-text"> Sometimes I get off my computer and get to do what <br> I love when free.This has enabled me to try figure out the activities throughout the day and set my mind free.</p>
+        <p>Listening to Music</p>
+        <p>Photo-Editing</p>
+        <p>Playing Pool</p>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
+    <div class="card">
+      <img src="/static/img/PinClipart.com_contact-clip-art_5497132.png" class="card-img-top" alt="..." style="height: 20%; width: 25%; align-items: center;">
+      <div class="card-body">
+        <h2 class="card-title">Contact links</h2>
+        <p class="card-text"><a href="https://www.linkedin.com/in/gideon-kipkirui/"><button class=" btn btn-primary" >LInkedIn</button></a></p>
+        <p class="card-text"><a href="https://github.com/olesigilai"><button class=" btn btn-primary" >Github</button></a></p>
+        <p class="card-text"><a href="https://twitter.com/ole_sigilai"><button class=" btn btn-primary" >Twitter</button></a></p>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- <div class="Skills">
     <div>
         <h2>Skills</h2>
         <p> My experience in Moringa has been awesome.In the last Six months, I have been able to gain lots of skills through research and in class.Some of them include:</p>
     </div>
-    <div class="skill">
-        <div class="row" id="skills">
-            <div class="col-3">
-                <ul>
-                    <li>
-                        Front-End using <strong>HTML,CSS,Bootstrap and Angular</strong>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-3">
-                <ul>
-                    <li>
-                        Backend-End using <strong>Django and PHP</strong>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-3">
-                <ul>
-                    <li>
-                        Databases using <strong>MySQL</strong>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-3">
-                <ul>
-                    <li>
-                        Collaboration tools using <strong>Github</strong>
-                    </li>
-                </ul>
-            </div>
-        </div>      
-    </div>
-</div>
+    
     <div class="hobbies">
         <div class="hobbyDesc"> 
             <h2>Hobbies</h2>
@@ -186,7 +196,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
         <footer>
             <div class="container text-muted text-center py-3 mt-5">
                 <h5>Copyright &copy; 2020 | Gideon Ole Sigilai</h5>
